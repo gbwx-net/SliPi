@@ -1,0 +1,107 @@
+##### Sli-Pi Software Design
+
+Main Program Flow
+	- PID.lock file
+	- settings file
+		- PID
+		- Number of shots
+		- Exposure time
+		- Movement
+	- Main loop
+		- Number of shots
+		- Exposure time
+			- Shutter OPEN
+			- OPEN time var update
+			- Timer loop
+			- Shutter CLOSED
+		- Movement
+			- Location
+				- Read Current
+			- Move
+				- Write New
+			- Timer loop
+				- Delay between shots (Shutter OPEN to Shutter OPEN)
+		
+
+Website
+	- Program Config
+		- WRITE Settings
+			- Number of shots
+			- Exposure time
+			- Movement
+	- Program Control
+		- Start
+		- Stop
+		- Reset
+	- Program Monitoring
+		- Start Time
+		- Completed Shots
+		- Completed Movements
+		- Current Shot
+		- Current Location
+		- Remaining Shots
+		- Remaining Movements
+		- Finish Time
+	- Sli-Pi Admin Control
+		- Reboot
+		- Shutdown
+		- Users
+			- Add
+			- Remove
+			- Update
+		- WiFi Settings
+			- SSID
+			- Password
+
+GPIO electronics
+	- LED
+	- Motor Controller
+	- Reboot / Shutdown Button
+
+LCD Display
+	- Running / Paused / Stopped
+	- Shot Status
+	- Delay Status
+
+##### Pi Software Build
+
+Upgrade CPAN
+Install Apache2 mod_perl
+Install and setup DHCP Server
+Install Bugzilla
+Install CVS/GIT/SVN
+Intergrate Bugzilla with CVS/GIT/SVN
+
+
+#### Electronics Design
+
+GIPO
+	- Motor Controller
+	- LED setup
+	- Cannon Pinout Jumper
+	- Nikon Pinout Jumper
+	- LCD Display
+
+Battery connection
+	- Voltage Transformer 5V
+	- Voltage Transformer Motor Appropriate
+
+
+#### Electronics Build
+
+GIPO
+	- Motor Controller
+	- LED setup
+	- Cannon Pinout Jumper
+	- Nikon Pinout Jumper
+	- LCD Display
+
+Battery connection
+	- Voltage Transformer 5V
+	- Voltage Transformer Motor Appropriate
+
+
+#### Slider Design
+
+#### Slider Build
+
